@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import SeasonDisplay from "./SeasonDisplay"
+import SeasonDisplay from "./SeasonDisplay";
 
 if (module.hot) {
   module.hot.accept();
 }
 
 class App extends React.Component {
-
-state = { lat: null, errorMessage: "" };
-  
+  state = { lat: null, errorMessage: "" };
 
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
